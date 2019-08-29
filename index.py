@@ -3,7 +3,7 @@ def prob1():
 
     print(f"Congratulations! You're running Christian's and Andrew's Task list program.")
     print(" ")
-    userInput = print("What would you like to do next?")
+    userInput = ""
     taskforce = []
 
     while userInput != "0":
@@ -12,12 +12,8 @@ def prob1():
               f"# 3. Delete a task.\n"
               f"# 0. To quit the program\n")
         if userInput == "1":
-            taskfile = "Task_File.py"
-            with open(taskfile) as f:
-                taskforce = f.readlines()
-            input("Press 'f' to open file")
-
-            print(taskforce)
+            for eachElement in taskforce:
+                print(eachElement)
 
         elif userInput == "2":
             from index2 import add_task
@@ -26,3 +22,9 @@ def prob1():
         elif userInput == "3":
             from index2 import delete_task
             delete_task(taskforce)
+
+    taskfile = "Task_File.py"
+    with open(taskfile) as f:
+        taskforce = f.readlines()
+    input("Press 'f' to open file")
+    print(taskforce)
