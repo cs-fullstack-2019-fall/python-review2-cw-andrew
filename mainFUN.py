@@ -1,5 +1,5 @@
-def main()
-    from index.py import prob1()
+def main():
+    from index import prob1
     prob1()
 
 main()
