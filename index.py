@@ -23,11 +23,7 @@ def prob1():
             from index2 import delete_task
             delete_task(taskforce)
 
-    taskfile = "Task_File.py"
-    with open(taskfile) as f:
-        taskforce = f.readlines()
-        f = open("Task_File.py", "a")
-    input("Press 'f' to open file- ")
-    print(taskforce)
-
+    f = open("saved_tasks.txt", "a")
+    for eachElement in taskforce:
+        f.write(f"{eachElement}\n")
     f.close()
