@@ -1,0 +1,5 @@
+def main()
+    prob1()
+    prob2()
+    prob3()
+main()
