@@ -26,5 +26,8 @@ def prob1():
     taskfile = "Task_File.py"
     with open(taskfile) as f:
         taskforce = f.readlines()
-    input("Press 'f' to open file")
+        f = open("Task_File.py", "a")
+    input("Press 'f' to open file- ")
     print(taskforce)
+
+    f.close()
