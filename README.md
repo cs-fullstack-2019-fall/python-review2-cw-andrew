@@ -1,3 +1,4 @@
+Great work y'all! You could def use more comments in your code (you don't have any!!) and consider better python file names. Score : 5!
 # python-review2-cw
 
 Create a task list. A user is presented with the text below. Let them select an option to list all of their tasks, add a task to their list, delete a task, or quit the program. Make each option a different function in your program. Do <strong>NOT</strong> use Google. Do <strong>NOT</strong> use other students. Try to do this on your own.
